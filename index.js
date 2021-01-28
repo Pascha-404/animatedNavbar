@@ -1,4 +1,7 @@
 const express = require('express');
+const {
+    join
+} = require('path');
 const app = express();
 const port = 8080;
 const path = require('path')
@@ -6,7 +9,7 @@ const path = require('path')
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {
     console.log(`Listening on http://localhost:${port}`)
