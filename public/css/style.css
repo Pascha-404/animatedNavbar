@@ -45,7 +45,7 @@ nav.active ul {
 }
 
 nav ul li {
-    margin-inline: 10px;
+    margin: 0 10px;
     opacity: 0;
     transform: rotateY(0deg);
     transition: transform 600ms linear, opacity 600ms linear;
@@ -77,20 +77,21 @@ nav.active {
     top: 10px;
     left: 5px;
     transition: transform 600ms linear;
-}
-
-nav.active .icon .line {
     transform: rotate(0deg) translateY(0px);
-}
-
-.icon .line1 {
-    transform: rotate(-765deg) translateY(5.5px);
 }
 
 .icon .line2 {
     top: auto;
     bottom: 10px;
     left: 5px;
+}
+
+nav.active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+
     transform: rotate(765deg) translateY(-5.5px);
 }
 
